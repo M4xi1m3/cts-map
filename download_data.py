@@ -23,7 +23,7 @@ load_dotenv()
 
 CTS_TOKEN = os.getenv('CTS_TOKEN')
 
-OUT = "data"
+OUT = "client/data"
 js_data = ""
 
 os.makedirs(pathlib.Path(OUT), exist_ok=True)
