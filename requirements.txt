@@ -1,4 +1,4 @@
-fastapi==0.115.4
-fastapi_cache==0.1.0
+fastapi[standard]==0.115.4
+fastapi-cache2[memcache]==0.2.2
 python-dotenv==1.0.1
 requests==2.32.3

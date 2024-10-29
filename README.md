@@ -2,16 +2,18 @@
 
 ## Utilisation
 
-Pour démarrer, il vous faudra vous procurer un compte sur le [portail Opendata](https://cts-strasbourg.eu/fr/portail-open-data/) de la CTS. Après avoir obtenu un compte vous pourrez obtenir une clé d'API, qui sera à renseigner dans un fichier `.env`.
-
-### Téléchargement des données
-
-La version actuelle ne télécha  rge pas en continue les données. Il faut utiliser le script `download_data.py` pour le faire.
-
-### Lancement d'un serveur HTTP
+Pour démarrer, créez un virtual env puis installez les dépendances :
 
 ```sh
-python3 -m http.server
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+### Lancement du serveur HTTP
+
+```sh
+fastapi run main.py
 ```
 
 ## License

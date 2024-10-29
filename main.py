@@ -18,10 +18,9 @@ async def lifespan(_: FastAPI) -> AsyncIterator[None]:
     FastAPICache.init(InMemoryBackend())
     yield
 
+load_dotenv()
 
 CTS_TOKEN = os.getenv('CTS_TOKEN')
-
-load_dotenv()
 
 app = FastAPI(lifespan=lifespan)
 
