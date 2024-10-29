@@ -10,8 +10,6 @@ from fastapi_cache.decorator import cache
 
 import requests
 
-from datetime import datetime
-
 from dotenv import load_dotenv
 import os
 

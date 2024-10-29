@@ -47,7 +47,7 @@ const loading_done = () => {
     // https://tile.openstreetmap.org/{z}/{x}/{y}.png
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
-        attribution: '&copy; carto.com'
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors<br/>Données issues de l\'<a href="https://www.cts-strasbourg.eu/fr/portail-open-data/">OpenData de la CTS</a><br/>Logiciel distribué sous <a href="https://www.gnu.org/licenses/gpl-3.0.html">Licence GPL</a>'
     }).addTo(map);
 
     const lignes = {};
